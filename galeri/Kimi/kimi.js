@@ -3,6 +3,9 @@ function saatim(){
     tarih=new Date();
     saat=tarih.getHours();
     dakika=tarih.getMinutes();
+    if(dakika-10<0){
+        dakika="0"+tarih.getMinutes();
+    }
     hdk=saat+":"+dakika;
     gun=tarih.getDate();
     ay=aylar[tarih.getMonth()];
